@@ -9,5 +9,5 @@ Este proyecto tiene como objetivo generar un itinerario de viajes dinámico que 
 | --- | --- | --- | --- | --- |
 |  1 |  Roizman Gheiler|  Maor|  mrg2000| 100% |
 |  2 | Harmsen | Jeronimo | harmsen97 | 100% |
-|  3 |  |  |  |  |
+|  3 | Sánchez Barreto | Angélica | angelicasanchezbarreto | 100% |
 |  4 |  |  |  |  |
