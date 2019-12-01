@@ -32,6 +32,14 @@
             android:onClick="onBtnItinerario"
             android:text="Itinerario" />
 
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="48dp"
+            android:background="@drawable/calendario"
+            android:scaleType="fitCenter">
+
+        </ImageView>
+
         <Button
             android:id="@+id/btnExperiencias"
             android:layout_width="wrap_content"

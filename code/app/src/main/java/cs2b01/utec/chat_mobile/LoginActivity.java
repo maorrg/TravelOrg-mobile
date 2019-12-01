@@ -1,5 +1,6 @@
 package cs2b01.utec.chat_mobile;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,6 +30,10 @@ public class LoginActivity extends AppCompatActivity {
 
     public void showMessage(String message) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    }
+
+    public Activity getActivity(){
+        return this;
     }
 
     public void onBtnLoginClicked(View view){

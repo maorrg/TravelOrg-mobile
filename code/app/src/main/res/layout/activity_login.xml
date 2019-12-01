@@ -12,7 +12,7 @@
         android:id="@+id/loginLayout"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="#3880AC">
+        android:background="#293462">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,7 +42,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/headson"
-                android:text="Bienvenido a Travel.org"
+                android:text="Logueate"
+                android:textColor="#fff"
                 android:textSize="40dp"
                 />
         </LinearLayout>
@@ -57,12 +58,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Username"
+                android:textColor="#60FFFFFF"
                 />
             <EditText
                 android:id="@+id/txtUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
+
+                android:backgroundTint="#60FFFFFF"
                 />
         </LinearLayout>
 
@@ -74,13 +78,17 @@
                 android:id="@+id/lblPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Password"/>
+                android:text="Password"
+                android:textColor="#60FFFFFF"
+                />
             <EditText
                 android:id="@+id/txtPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword"
+                android:backgroundTint="#60FFFFFF"
+                />
         </LinearLayout>
 
         <LinearLayout
