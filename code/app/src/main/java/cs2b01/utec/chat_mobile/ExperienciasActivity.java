@@ -67,7 +67,7 @@ public class ExperienciasActivity extends AppCompatActivity {
 
     //Obtener los usuarios del servidor
     public void getExperiencias(){
-        String url = "http://10.0.2.2:8000/experiencias";
+        String url = "https://travelorg2.herokuapp.com/experiencias";
         RequestQueue queue = Volley.newRequestQueue(this);
         JSONArray parameters = new JSONArray();
         final int userId = getIntent().getExtras().getInt("user_id");

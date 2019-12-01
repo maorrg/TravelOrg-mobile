@@ -56,7 +56,7 @@ public class ItinerarioActivity extends AppCompatActivity {
 
     public void getItinerario(){
         final int userId = getIntent().getExtras().getInt("user_id");
-        String url = "http://10.0.2.2:8000/itinerarioDatos/"+userId;
+        String url = "https://travelorg2.herokuapp.com/itinerarioDatos/"+userId;
         RequestQueue queue = Volley.newRequestQueue(this);
         JSONArray parameters = new JSONArray();
         JsonArrayRequest jsonObjectRequest = new JsonArrayRequest(

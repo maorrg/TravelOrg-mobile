@@ -121,7 +121,7 @@ public class ItinerarioAdapter extends RecyclerView.Adapter<ItinerarioAdapter.Vi
         //4.2. Create request object
         JsonObjectRequest request = new JsonObjectRequest(
                 Request.Method.DELETE,
-                "http://10.0.2.2:8000/deleteExperiencia/"+id_experiencia+"/"+user_id,
+                "https://travelorg2.herokuapp.com/deleteExperiencia/"+id_experiencia+"/"+user_id,
                 jsonMessage,
                 new Response.Listener<JSONObject>() {
                     @Override
