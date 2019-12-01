@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ItinerarioAdapter"></activity>
+        <activity android:name=".CrearExperiencias"></activity>
+        <activity android:name=".ItinerarioAdapter" />
         <activity android:name=".ItinerarioActivity" />
         <activity android:name=".DescripcionActivity" />
         <activity android:name=".RegistroActivity" />

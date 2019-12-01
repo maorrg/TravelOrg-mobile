@@ -124,7 +124,7 @@ public class ExperienciasAdapter extends RecyclerView.Adapter<ExperienciasAdapte
         //4.2. Create request object
         JsonObjectRequest request = new JsonObjectRequest(
                 Request.Method.POST,
-                "http://https://travelorg2.herokuapp.com/itinerarioAdd",
+                "https://travelorg2.herokuapp.com/itinerarioAdd",
                 jsonMessage,
                 new Response.Listener<JSONObject>() {
                     @Override

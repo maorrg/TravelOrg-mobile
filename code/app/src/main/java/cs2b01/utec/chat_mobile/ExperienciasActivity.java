@@ -52,6 +52,15 @@ public class ExperienciasActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onExperiencias(View view){
+        Intent intent = new Intent(this, CrearExperiencias.class);
+        String nombre = getIntent().getExtras().get("nombre").toString();
+        int user_id = getIntent().getExtras().getInt("user_id");
+        intent.putExtra("user_id",user_id);
+        intent.putExtra("nombre",nombre);
+        startActivity(intent);
+    }
+
 
     @Override
     protected void onResume(){

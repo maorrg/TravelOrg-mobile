@@ -51,7 +51,7 @@
             android:background="@drawable/corners_buttons3"
             android:fontFamily="@font/winter"
             android:onClick="onExperiencias"
-            android:text="Experiencias"
+            android:text="Crear experiencias"
             android:scaleType="fitCenter"/>
 
     </LinearLayout>
