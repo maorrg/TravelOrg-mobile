@@ -36,11 +36,13 @@
         android:id="@+id/btnDelete"
         android:layout_width="90dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/winter"
         android:text="Delete"
         android:onClick="onBtnDeleteClicked"
         android:layout_marginLeft="295dp"
-        android:background="#F9A825"
-        android:textColor="@android:color/white"/>
+        android:textAlignment="center"
+        android:background="@drawable/corners_buttons2"
+        android:textColor="@android:color/black"/>
 
 
 </RelativeLayout>
