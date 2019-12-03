@@ -37,7 +37,6 @@ public class RegistroActivity extends AppCompatActivity {
         return this;
     }
 
-/*
 
     public void Registrarse(View view) {
 
@@ -48,22 +47,26 @@ public class RegistroActivity extends AppCompatActivity {
         EditText txtLastname = (EditText) findViewById(R.id.r_Apellido);
         EditText txt = (EditText) findViewById(R.id.r_pais);
         EditText txtPassword = (EditText) findViewById(R.id.r_Password);
+        EditText txtEdad = (EditText) findViewById(R.id.r_edad);
 
-        String username = txtUsername.getText().toString();
-        String email = txtEmail.getText().toString();
+        final String username = txtUsername.getText().toString();
+        final String email = txtEmail.getText().toString();
         String name = txtName.getText().toString();
         String lastname = txtLastname.getText().toString();
         String country = txt.getText().toString();
         String password = txtPassword.getText().toString();
+        String Sdad = txtEdad.getText().toString();
+        int edad = Integer.parseInt(Sdad);
 
         // 2. Creating a message from user input data
-        Map<String, String> message = new HashMap<>();
-        message.put("username", username);
-        message.put("password", password);
-        message.put("email", email);
-        message.put("name", name);
-        message.put("lastname", lastname);
-        message.put("country", country);
+        Map<String, Object> message = new HashMap<>();
+        message.put("usuario", username);
+        message.put("contrasena", password);
+        message.put("correo", email);
+        message.put("nombre", name);
+        message.put("apellido", lastname);
+        message.put("pais", country);
+        message.put("edad",edad);
 
         // 3. Converting the message object to JSON string (jsonify)
         JSONObject jsonMessage = new JSONObject(message);
@@ -71,7 +74,7 @@ public class RegistroActivity extends AppCompatActivity {
         // 4. Sending json message to Server
         JsonObjectRequest request = new JsonObjectRequest(
                 Request.Method.POST,
-                "http://10.0.2.2:8000/registrar",
+                "https://travelorg2.herokuapp.com/registrar",
                 jsonMessage,
                 new Response.Listener<JSONObject>() {
                     @Override
@@ -80,7 +83,7 @@ public class RegistroActivity extends AppCompatActivity {
                         try {
                             Intent intent = new Intent(getActivity(), LoginActivity.class);
                             startActivity(intent);
-                            showMessage("Registro con éxito");
+                            showMessage("Usuario "+username+" registrado con exito!!!");
 
                         }
                         catch (Exception e) {
@@ -94,7 +97,7 @@ public class RegistroActivity extends AppCompatActivity {
                     public void onErrorResponse(VolleyError error) {
                         error.printStackTrace();
                         if( error instanceof AuthFailureError){
-                            showMessage("Email ya registrado, intente con otro");
+                            showMessage(email+" ya exite, intente con otro");
                         }
                         else {
                             showMessage(error.getMessage());
@@ -106,7 +109,7 @@ public class RegistroActivity extends AppCompatActivity {
         queue.add(request);
     }
 
-*/
+
 
 }
 
