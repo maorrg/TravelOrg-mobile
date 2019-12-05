@@ -47,7 +47,9 @@
                 android:ems="15"
                 android:hint="Ingresa tu usuario"
                 android:textAlignment="center"
-                android:textColorHint="#B9ADB6B6" />
+                android:textColorHint="#B9ADB6B6"
+                android:textColor="#FFF"
+            />
         </LinearLayout>
 
         <LinearLayout
@@ -66,7 +68,8 @@
                 android:hint="Ingresa tu email"
                 android:textAlignment="center"
                 android:textColorHint="#B9ADB6B6"
-                />
+                android:textColor="#FFF"
+            />
         </LinearLayout>
 
         <LinearLayout
@@ -84,6 +87,7 @@
                 android:hint="Ingresa tu nombre"
                 android:textAlignment="center"
                 android:textColorHint="#B9ADB6B6"
+                android:textColor="#FFF"
                 />
         </LinearLayout>
 
@@ -103,6 +107,7 @@
                 android:hint="Ingresa tu apellido"
                 android:textAlignment="center"
                 android:textColorHint="#B9ADB6B6"
+                android:textColor="#FFF"
                 />
         </LinearLayout>
 
@@ -122,6 +127,7 @@
                 android:hint="Ingresa tu edad"
                 android:textAlignment="center"
                 android:textColorHint="#B9ADB6B6"
+                android:textColor="#FFF"
                 />
         </LinearLayout>
 
@@ -141,6 +147,7 @@
                 android:hint="Ingresa tu nacionalidad"
                 android:textAlignment="center"
                 android:textColorHint="#B9ADB6B6"
+                android:textColor="#FFF"
                 />
         </LinearLayout>
 
@@ -160,6 +167,7 @@
                 android:hint="Ingresa tu contraseña"
                 android:textAlignment="center"
                 android:textColorHint="#B9ADB6B6"
+                android:textColor="#FFF"
                 />
         </LinearLayout>
 
